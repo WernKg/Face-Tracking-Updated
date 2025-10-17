@@ -9,7 +9,7 @@ Dev: WernKg
 
 # Các Bước Thực Hiện Để Chạy Chương Trình
 
-# Yêu cầu bắt buộc:
+Yêu cầu bắt buộc:
 Python 3.11.7+ [https://www.python.org/downloads/]
 
 #Bước 1:
