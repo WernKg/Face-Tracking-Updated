@@ -15,7 +15,8 @@ Python 3.11.7+ [https://www.python.org/downloads/]
 
 * Bước 1:
 Tải tất cả thư viện được gói trong "requirements.txt"
-<pip install -r requirements.txt>
+
+      pip install -r requirements.txt
 
 Lưu Ý: Khi cài nếu phiên bản thư viện bị lỗi thì hãy thử giảm hoặc tăng phiên bản
 
@@ -43,11 +44,13 @@ Các chương trình hổ trợ phụ (tùy thích)
 
 * Phím tắt "a" - Thêm trực tiếp dữ liệu (data) vào file npy
   
-  Exam: Nhập họ và tên
+  Exam:
   
-        Nhập lớp
+      Nhập họ và tên: Nguyễn Văn A
   
-        Chọn ảnh (ảnh mặt mộc/thẳng mặt/không chá ánh sáng)
+      Nhập lớp: 12A1
+  
+      Chọn ảnh (ảnh mặt mộc/thẳng mặt/không chá ánh sáng)
 
 * Phím tắt "p" - Chọn ảnh để bắt đầu nhận diện
 
