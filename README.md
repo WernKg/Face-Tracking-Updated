@@ -54,6 +54,8 @@ Các chương trình hổ trợ phụ (tùy thích)
 
 * Phím tắt "p" - Chọn ảnh để bắt đầu nhận diện
 
+* Phím tắt "c" - Chuyển đổi Webcam
+
 * Phím tắt "e" - Thoát chương trình
 
 
