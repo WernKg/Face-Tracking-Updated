@@ -24,4 +24,30 @@ Chạy file script.exe để khởi động chương trình
 
 #Notes: Khi phát sinh lỗi xin hãy báo cho Dev hoặc Author để được xử lí.
 
+# Chi Tiết
+Tổng chương trình gồm có các File:
+
+* Script.exe (Main)
+* known_face_embeddings.npy (face-data)
+* known_face_names.npy (name-data)
+* known_face_class.npy (class-data)
+* log_nhandien.csv (log excel)
+* buffalo_l (File Model)
+
+Các chương trình hổ trợ phụ (tùy thích)
+
+* Chương trình kiểm tra dữ liệu trong các File Data .npy [check-data.py]
+* Chương trình khởi tạo lại các File Data .npy [create_file_data.py]
+
+# Phím Tắt
+
+* Phím tắt "a" - Thêm trực tiếp dữ liệu (data) vào file npy
+  Exam: Nhập họ và tên
+        Nhập lớp
+        Chọn ảnh (ảnh mặt mộc/thẳng mặt/không chá ánh sáng)
+
+* Phím tắt "p" - Chọn ảnh để bắt đầu nhận diện
+
+* Phím tắt "e" - Thoát chương trình
+
 
