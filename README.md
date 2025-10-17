@@ -42,8 +42,11 @@ Các chương trình hổ trợ phụ (tùy thích)
 # Phím Tắt
 
 * Phím tắt "a" - Thêm trực tiếp dữ liệu (data) vào file npy
+  
   Exam: Nhập họ và tên
+  
         Nhập lớp
+  
         Chọn ảnh (ảnh mặt mộc/thẳng mặt/không chá ánh sáng)
 
 * Phím tắt "p" - Chọn ảnh để bắt đầu nhận diện
