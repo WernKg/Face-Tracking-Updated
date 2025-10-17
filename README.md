@@ -17,7 +17,7 @@ Python 3.11.7+ [https://www.python.org/downloads/]
 Tải tất cả thư viện được gói trong "requirements.txt"
 <pip install -r requirements.txt>
 
-* Lưu Ý: Khi cài nếu phiên bản thư viện bị lỗi thì hãy thử giảm hoặc tăng phiên bản
++ Lưu Ý: Khi cài nếu phiên bản thư viện bị lỗi thì hãy thử giảm hoặc tăng phiên bản
 
 * Bước 2:
 Chạy file script.exe để khởi động chương trình
