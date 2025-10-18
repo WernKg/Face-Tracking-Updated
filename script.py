@@ -231,7 +231,6 @@ cv2.destroyAllWindows()
 
 print("Đã load các khuôn mặt:", known_face_names)
 print("→ Số khuôn mặt phát hiện:", len(faces))
-print(f"Tọa độ: x1={x1}, x2={x2}, y1={y1}, y2={y2}")
 
 
 
