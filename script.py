@@ -9,7 +9,7 @@ from tkinter import Tk, filedialog, simpledialog
 
 # (Hàm lấy dữ liệu)
 def resource_path(relative_path):
-    if getattr(sys, '_MEIPASS', False): 
+    if hasattr(sys, '_MEIPASS'): 
         return os.path.join(sys._MEIPASS, relative_path)
     return os.path.join(os.path.abspath("."), relative_path)
 
@@ -100,11 +100,10 @@ def init_insightface(): #Hàm khởi tạo InsightFace, bộ não chính nơi AI
         model_directory = resource_path("buffalo_l")
         app = FaceAnalysis(
                 name="buffalo_l", #Mô hình được sử dụng cho dự án, đây là mô hình mạnh nhất mà tôi biết
-                det_size = (320, 320),
                 root=model_directory,
                 providers=["DmlExecutionProvider", "CPUExecutionProvider"], #Phần cứng mà InsightFace sẽ sử dụng: GPU hoặc CPU (khuyến nghị dùng GPU để có tốc độ khung hình cao hơn)
             )
-        app.prepare(ctx_id=0, det_size=(640, 640)) #  ctx_id = 0 nghĩa là dùng GPU (nếu có), -1 là dùng CPU, 1 là GPU khác nếu bạn có nhiều GPU
+        app.prepare(ctx_id=0, det_size=(320, 320)) #  ctx_id = 0 nghĩa là dùng GPU (nếu có), -1 là dùng CPU, 1 là GPU khác nếu bạn có nhiều GPU
         print("InsightFace init success!!") #  In ra khi khởi tạo mô hình thành công
         return app
     except Exception as e:
@@ -166,8 +165,8 @@ while True:
             cv2.putText(frame, f"{label} {conf:.2f}", (x1, y1-10),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.8, (0,0,255), 2)
 #               Log Vào Excel
-            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            faces = app.get(frame_rgb)
+#            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            faces = app.get(frame)
             for face in faces:
                 embedding = np.array(face.embedding, dtype=np.float32)
                 embedding = embedding / np.linalg.norm(embedding)
@@ -233,6 +232,7 @@ cv2.destroyAllWindows()
 print("Đã load các khuôn mặt:", known_face_names)
 print("→ Số khuôn mặt phát hiện:", len(faces))
 print(f"Tọa độ: x1={x1}, x2={x2}, y1={y1}, y2={y2}")
+
 
 
 
