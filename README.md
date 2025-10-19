@@ -14,6 +14,12 @@ Dev: WernKg
 Python 3.11.7+ [https://www.python.org/downloads/]
 
 * Bước 1:
+  Tải Microsoft Visual Studio Build Tools [https://visualstudio.microsoft.com/visual-cpp-build-tools/]
+
+  Khi cài đặt chọn: * Desktop development with C++
+  Tùy chọn - chọn thêm “Windows 10 SDK” hoặc “Windows 11 SDK” nếu có
+
+* Bước 1:
 Tải tất cả thư viện được gói trong "requirements.txt"
 
       pip install -r requirements.txt
