@@ -28,6 +28,8 @@ Lưu Ý: Khi cài nếu phiên bản thư viện bị lỗi thì hãy thử gi�
 * Bước 3:
 Chạy file script.exe để khởi động chương trình
 
+(Thời gian khởi động sẽ hơi lâu vì chương trình nặng: ~20-30 giây
+
 #Notes: Khi phát sinh lỗi xin hãy báo cho Dev hoặc Author để được xử lí.
 
 # Chi Tiết
