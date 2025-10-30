@@ -22,7 +22,7 @@ csv_file = "log_nhandien.csv"
 if not os.path.exists(csv_file):
     with open(csv_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["Thời gian", "Nguồn", "Tên", "Lớp", "Độ tin cậy"])
+        writer.writerow(["Thoi gian", "Nguon", "Ten", "Lop", "Đo tin cay"])
 
 # tải dữ liệu nếu có ( AI Debug)
 if os.path.exists("known_face_embeddings.npy"):
@@ -172,7 +172,7 @@ while True:
                 embedding = embedding / np.linalg.norm(embedding)
 
                 best_score = 0
-                best_name = "Không xác định"
+                best_name = "Khong xac dinh"
                 best_class = "N/A"
 
                 for i, known_embedding in enumerate(known_face_embeddings):
@@ -187,7 +187,7 @@ while True:
                     recognized_name = best_name
                     recognized_class = best_class
                 else:
-                    recognized_name = "Không xác định"
+                    recognized_name = "Khong xac dinh"
                     recognized_class = "N/A"
                 with open(csv_file, "a", newline="", encoding="utf-8") as f:
                     writer = csv.writer(f)
@@ -231,6 +231,7 @@ cv2.destroyAllWindows()
 
 print("Đã load các khuôn mặt:", known_face_names)
 print("→ Số khuôn mặt phát hiện:", len(faces))
+
 
 
 
